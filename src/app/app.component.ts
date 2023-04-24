@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
   yellowTrainsCalled = 0;
 
   ngOnInit() {
-    interval(500)
-      .pipe(
+    interval(500);
+    /* .pipe(
         take(10),
         map((value) => (value % 2 === 0 ? 'rouge' : 'bleu')),
         tap((color: 'rouge' | 'bleu') =>
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
           )
         )
       )
-      .subscribe();
+      .subscribe(); */
   }
 
   getTrainObservable$(color: 'rouge' | 'bleu') {
