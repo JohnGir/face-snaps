@@ -5,7 +5,7 @@ import { FaceSnap } from '../models/face-snap.model';
   providedIn: 'root',
 })
 export class FaceSnapsService {
-  faceSnaps = [
+  faceSnaps: FaceSnap[] = [
     {
       id: 1,
       title: 'Aurus',
@@ -24,6 +24,7 @@ export class FaceSnapsService {
       imageUrl:
         'https://cdn.pixabay.com/photo/2023/04/05/18/19/art-7902101_960_720.jpg',
       snaps: 99,
+      location: 'Bouaflé',
     },
     {
       id: 3,

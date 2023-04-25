@@ -5,5 +5,5 @@ export class FaceSnap {
   createdDate: Date;
   imageUrl: string;
   snaps: number;
-  location?: string;
+  location: string;
 }
